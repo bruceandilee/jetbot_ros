@@ -16,10 +16,10 @@ BASE_IMAGE=$2
 set -e
 
 # find L4T_VERSION
-source docker/tag.sh
+# source docker/tag.sh
 
 if [ -z $BASE_IMAGE ]; then
-	BASE_IMAGE="dustynv/ros:$ROS_DISTRO-pytorch-l4t-$TAG"
+	BASE_IMAGE="dustynv/ros:$ROS_DISTRO-pytorch-l4t-r32.5.0"
 fi
 
 
