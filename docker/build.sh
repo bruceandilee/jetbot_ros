@@ -36,4 +36,4 @@ build_container()
 			.
 }
 
-build_container "jetbot_ros:$ROS_DISTRO-$TAG" "Dockerfile"
+build_container "jetbot_ros:$ROS_DISTRO-r32.5.0" "Dockerfile"
