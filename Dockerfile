@@ -116,5 +116,7 @@ RUN echo 'source ${ROS_ROOT}/install/setup.bash' >> /root/.bashrc && \
 
 RUN pip install flask
 
+RUN chmod +x /ros_entrypoint.sh
+
 ENTRYPOINT ["/ros_entrypoint.sh"]
 CMD ["bash"]
