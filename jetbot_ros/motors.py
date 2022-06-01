@@ -94,7 +94,7 @@ class MotorController(Node):
     def string_callback(self, msg):
         if "," in msg.data.lower():
             values = msg.data.lower().split(",")
-            self.set_speed(float(values[0]), float(values[1]))
+            self.set_speed(float(values[0]) * 0.5, float(values[1]) * 0.5)
             self.get_logger().info(f"left={values[0]} right={values[1]}")
         else:
             self.get_logger().info(f"Couldn't process message: {msg.data}")
